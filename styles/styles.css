@@ -11,9 +11,14 @@
     font-family: "Roboto";
     letter-spacing: 0.03em;
     font-size: 14px;
+    width: 1600px;
 }
 
 /* header */
+
+.header {
+    border-bottom: #ececec;
+}
 
 .header-container {
     display: flex;
@@ -139,14 +144,29 @@
 
 .hero {
     background-color: #2F303A;
-    padding-top: 180px;
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+
+}
+
+.container-hero {
+    position: absolute;
+    height: 600px;
+    width: 1600px;
+    left: 0px;
+    top: 0px;
 }
 
 .hero-button {
-    margin-right: 495px;
-    margin-left: 495px;
-    margin-top: 25px;
-    margin-bottom: 200px;
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    border: none;
 }
 
 .hero-title {
@@ -157,6 +177,7 @@
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
+    padding-top: 200px;
 }
 
 .main .hero-button{
@@ -178,6 +199,11 @@
 
 .features {
     list-style: none;
+    position: absolute;
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
 }
 
 .container-features {
@@ -203,6 +229,14 @@
     color: #757575;
 }
 
+.our-work {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;
+}
+
 .what-we-do {
     font-weight: 700;
     font-size: 36px;
@@ -212,26 +246,31 @@
     color: var(--main-txt-cl);
 }
 
-.our-work-photo {
-    display: flex;
-    gap: 30px;
-}
-
 .container-our-work {
     padding-bottom: 30px;
 }
 
 .work {
-    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 .our-team {
-    list-style: none;
     background-color: #f5f4fa;
+    position: absolute;
+    top: 1448px;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
 }
 
 .container-our-team {
     padding-top: 20px;
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+
 }
 
 .our-headline-team {
@@ -244,8 +283,9 @@
 }
 
 .team-list {
-    list-style: none;
     display: flex;
+    left: 215px;
+    width: 1170px;
 }
 
 .list-item-team {
@@ -286,6 +326,8 @@
     position: absolute;
     width: 1600px;
     height: 252px;
+    left: 0px;
+    top: 2094px;
     display: inline-block;
 }
 
@@ -343,8 +385,24 @@
 
 /*portfolio*/
 
+.container-portfolio {
+   width: 1170px; 
+}
+
+.portfolio-div {
+    max-width: 1200px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .list {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 .list .button {
@@ -387,8 +445,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0;
+    padding-top: 34px;
     width: 370px;
+    
 }
 
 .projects {
@@ -397,6 +456,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #EEEEEE;
+    flex-basis: calc((100% - 30px) / 3);
 }
 
 .link {
