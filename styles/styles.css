@@ -17,7 +17,7 @@
 /* header */
 
 .header {
-    border-bottom: #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -133,41 +133,35 @@
 
 
 /*main*/
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
 }
 
 .hero {
     background-color: #2F303A;
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-
 }
 
 .container-hero {
-    position: absolute;
-    height: 600px;
-    width: 1600px;
-    left: 0px;
-    top: 0px;
+    padding-bottom: 200px;
 }
 
 .hero-button {
-    position: absolute;
     width: 216px;
     height: 50px;
-    left: 692px;
-    top: 430px;
     border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.015);
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {}
 
 .hero-title {
     color: #FFFFFF;
@@ -197,13 +191,14 @@
     height: 50px;
 }
 
-.features {
+.features {}
+
+.list-features {
     list-style: none;
-    position: absolute;
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .container-features {
@@ -229,13 +224,7 @@
     color: #757575;
 }
 
-.our-work {
-    position: absolute;
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 966px;
-}
+.our-work {}
 
 .what-we-do {
     font-weight: 700;
@@ -257,20 +246,11 @@
 
 .our-team {
     background-color: #f5f4fa;
-    position: absolute;
-    top: 1448px;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
 }
 
 .container-our-team {
-    padding-top: 20px;
-    position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .our-headline-team {
@@ -316,19 +296,12 @@
 }
 
 /* footer */
-.container-footer {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+.container-footer {}
 
 .footer {
     background-color:#2F303A;
-    position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;
-    display: inline-block;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .logo-footer {
@@ -341,6 +314,8 @@
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .logo-footer-1 {
@@ -381,12 +356,25 @@
 
 .footer-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-li {
+    margin-bottom: 9px;
 }
 
 /*portfolio*/
 
-.container-portfolio {
-   width: 1170px; 
+.img {
+    display: block;
+}
+
+.container-portfolio {}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .portfolio-div {
@@ -399,10 +387,12 @@
 .list {
     display: flex;
     justify-content: center;
+    list-style: none;
     gap: 8px;
-    padding-top: 94px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
     padding-bottom: 94px;
-
 }
 
 .list .button {
@@ -415,6 +405,9 @@
     letter-spacing: 0.03em;
     text-align: center;
     border: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list .button:hover,
@@ -441,26 +434,25 @@
 
 .list-projects {
     list-style: none;
-    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 34px;
-    width: 370px;
-    
+    padding: 0;
 }
 
 .projects {
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    border-width: 1px;
-    border-style: solid;
     border-color: #EEEEEE;
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 2*30px) / 3);
 }
 
 .link {
     text-decoration: none;
+}
+
+.card-text {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .project-name {
@@ -469,11 +461,8 @@
     font-weight: 700;
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .project-type {
@@ -482,8 +471,5 @@
     font-weight: 400;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-top: 0px;
+    margin: 0;
 }
