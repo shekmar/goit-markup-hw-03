@@ -124,6 +124,11 @@
     margin-right: auto;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .hero {
     background-color: #2F303A;
     text-align: center;
@@ -268,7 +273,7 @@
 /* footer */
 
 .footer {
-    background-color:#2F303A;
+    background-color: #2F303A;
     padding-bottom: 60px;
     padding-top: 60px;
 }
@@ -292,8 +297,7 @@
 }
 
 
-.logo-footer 
-.logo-footer-1 {
+.logo-footer .logo-footer-1 {
     width: 145px;
     height: 31px;
     left: 215px;
