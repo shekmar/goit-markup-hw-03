@@ -3,7 +3,11 @@
     /*text colors*/
     --main-txt-cl: #212121;
     --accent-txt-cl: #2196f3;
+    --scnd-txt-cl: #757575;
+    --light-txt-cl: #FFFFFF;
     /*background colors*/
+    --dark-background-cl: #2f303a;
+    --border-cl: #EEEEEE;
 }
 
 .page {
@@ -89,7 +93,7 @@
 }
 
 .list-header .link-contacts {
-    color: #757575;
+    color: var(--scnd-txt-cl);
 }
 
 .list-header .link-contacts:hover,
@@ -99,7 +103,7 @@
 
 .list-header {
     list-style: none;
-    color: #757575;
+    color: var(--scnd-txt-cl);
     font-weight: 500;
     display: flex;
     gap: 50px;
@@ -128,7 +132,7 @@
 }
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--dark-background-cl);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -139,7 +143,7 @@
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--light-txt-cl);
     background-color: var(--accent-txt-cl);
     border: none;
     width: 216px;
@@ -153,7 +157,7 @@
 .hero-button:active {}
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--light-txt-cl);
     text-transform: uppercase;
     font-family: "Roboto";
     font-style: normal;
@@ -164,6 +168,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     width: 696px;
 }
 
@@ -194,11 +199,12 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .features-detail-p {
     line-height: calc(24 / 14);
-    color: #757575;
+    color: var(--scnd-txt-cl);
     margin: 0;
 }
 
@@ -214,6 +220,12 @@
     text-align: center;
     margin: 0;
     margin-bottom: 50px;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .work {
@@ -234,16 +246,17 @@
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-list {
     display: flex;
+    gap: 30px;
 }
 
 .list-item-team {
     background-color: white;
-    margin-right: 30px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -255,8 +268,7 @@
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    padding-top: 30;
-    margin: 0;
+    margin-top: 30;
 }
 
 .position {
@@ -265,16 +277,15 @@
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
-    color: #757575;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    margin: 0;
+    color: var(--scnd-txt-cl);
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /* footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--dark-background-cl);
     padding-bottom: 60px;
     padding-top: 60px;
 }
@@ -292,7 +303,7 @@
 }
 
 .logo-footer-1 {
-    color: #FFFFFF;
+    color: var(--light-txt-cl);
 }
 
 
@@ -315,7 +326,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
-    color: #FFFFFF;
+    color: var(--light-txt-cl);
 }
 
 .contacts {
@@ -379,7 +390,7 @@
 .list-portfolio .button:hover,
 .list-portfolio .button:focus,
 .list-portfolio .button:active {
-    color: #FFFFFF;
+    color: var(--light-txt-cl);
     background-color: var(--accent-txt-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -394,8 +405,8 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background-color: var(--light-txt-cl);
+    border: 1px solid var(--border-cl);
     box-sizing: border-box;
 }
 
@@ -405,10 +416,11 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    margin: 0;
 }
 
 .projects {
-    border-color: #EEEEEE;
+    border-color: var(--border-cl);
     flex-basis: calc((100% - 2*30px) / 3);
 }
 
@@ -418,7 +430,7 @@
 
 .card-text {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--border-cl);
     border-top: none;
 }
 
@@ -437,6 +449,6 @@
     line-height: calc(30 / 16);
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--scnd-txt-cl);
     margin: 0;
 }
